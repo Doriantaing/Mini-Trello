@@ -1,0 +1,9 @@
+- Ajouter des colonnes
+- Supprimer colonnes
+- Faire Des Cartes 
+- Permettre d'ajouter des cartes
+- Modifier les cartes
+  - Le titre 
+  - Le contenu 
+- Drag and Drop des Cartes
+- Supprimer des Cartes
