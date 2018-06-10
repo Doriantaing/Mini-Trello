@@ -1,0 +1,84 @@
+.header {
+    font-family: "quicksand";
+    &__container {
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        position: relative;
+    }
+    &__title {
+        font-size: 20px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        color: #fff;
+    }
+    &__title:hover{
+        color: #0a0f0d;
+    }
+    &__navList {
+        display: none;
+        margin-right: auto;
+        margin-left: auto;
+        @include for-size(tablet-portrait-up) {
+            display: flex;
+        }
+    }
+    &__navLink {
+        color: #fff;
+        padding: 0 25px;
+        transition: 0.5s;
+    }
+    &__navLink:hover{
+        color: #0a0f0d;
+    }
+    &__menu {
+        cursor: pointer;
+    }
+    &__menuLine {
+        height: 2px;
+        width: 25px;
+        background: #fff;
+        margin: 5px 0;
+        transition: 1s;
+    }
+    &__menuLine[data-line="top"] {
+        width: 10px;
+    }
+    &__menuLine[data-line="bottom"] {
+        width: 15px;
+    }
+    &__offCanvas{
+        width: 50%;
+        position: absolute;
+        right: -400px;
+        bottom: 0px;
+        transition: 2s;
+        @include for-size(tablet-portrait-up){
+            width: 20%;
+        }
+        &Title{
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+            @include for-size(tablet-portrait-up){
+                font-size: 20px;
+            }
+        }
+    }
+
+    .openMenu{
+        transform: rotate(-40deg) translate(-2px, -10px);
+    }
+    .openMenu:nth-child(1){
+        opacity: 0;
+    }
+    .openMenu:nth-child(3){
+        transform: rotate(40deg) translate(-15px, -5px);
+        width: 25px;
+    }
+    .openCanvas{
+        right: 0;
+    }
+}
