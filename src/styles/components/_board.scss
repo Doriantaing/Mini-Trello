@@ -1,4 +1,5 @@
 .board {
+    color: #fff;
     &__container {
         margin: 30px 30px;
     }
@@ -16,11 +17,8 @@
         }
     }
     &__list {
-        width: 250px;
-        margin: 20px 0;
-        border-radius: 5px;
-        padding: 20px 0;
-        background: linear-gradient(to right, #7b4397, #dc2430); 
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
     }
     &__listContainer {
         display: flex;
@@ -28,6 +26,10 @@
         justify-content: center;
         align-items: center;
         margin: 0 20px;
+        width: 250px;
+        margin: 20px 0;
+        border-radius: 5px;
+        padding: 20px 0;
     }
     &__listTitle {
         text-align: center;
@@ -35,12 +37,20 @@
         padding-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: 5px;
+        &Change{
+            display: none;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'quicksand';
+        }
     }
     &__card {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background: #fff;
+        color: #000;
         border-radius: 5px;
         width: 200px;
         padding: 15px 15px;
