@@ -6,13 +6,14 @@
     &__header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &Title {
             font-size: 40px;
             color: black;
         }
         &Img{
-            width: 40px;
-            height: 40px;
+            width: 100px;
+            height: 100px;
             cursor: pointer;
         }
     }
@@ -25,6 +26,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background: #aec5eb;
         margin: 0 20px;
         width: 250px;
         margin: 20px 0;
@@ -37,6 +39,7 @@
         padding-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: 5px;
+        color: #685044;
         &Change{
             display: none;
             border: none;
@@ -61,8 +64,8 @@
             cursor: pointer;
         }
         &Add{
-            width: 30px;
-            height: 30px;
+            width: 50%;
+            height: 50%;
             cursor: pointer;
             margin-top: 20px;
         }
