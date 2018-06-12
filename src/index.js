@@ -43,10 +43,18 @@ function menuClick(a) {
 
 // Add List 
 
+var nbrList = 0;
 
 dom.addList.addEventListener('click',function(){
+    storeList();
     createList();
 })
+
+
+function storeList(){
+   localStorage.setItem('list ' + nbrList, nbrList);
+   nbrList++;
+}
 
 function createList(){
   var list = document.createElement('div');
@@ -60,9 +68,8 @@ function createList(){
 
   var addCard = document.createElement('img');
   addCard.classList.add('board__cardAdd');
-  addCard.src= "img/plus.svg";
+  addCard.src= "img/plus.png";
   list.appendChild(addCard);
-
 }
 
 
